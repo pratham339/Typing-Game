@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Typing Speed Test Game | CodingNepal</title>
+    <link rel="stylesheet" href="ty.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="wrapper">
+      <input type="text" class="input-field" placeholder="Start typing...">
+      <div class="content-box">
+        <div class="typing-text">
+          <p id="paragraph"></p>
+        </div>
+        <div class="content">
+          <ul class="result-details">
+            <li class="time">
+              <p>Time Left:</p>
+              <span id="time-left">60</span>s
+            </li>
+            <li class="mistake">
+              <p>Mistakes:</p>
+              <span id="mistakes">0</span>
+            </li>
+            <li class="wpm">
+              <p>WPM:</p>
+              <span id="wpm">0</span>
+            </li>
+            <li class="cpm">
+              <p>CPM:</p>
+              <span id="cpm">0</span>
+            </li>
+          </ul>
+          <button id="try-again">Try Again</button>
+        </div>
+      </div>
+      <div id="resultModal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <h2>Typing Test Result</h2>
+          <p id="resultMessage"></p>
+        </div>
+      </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
